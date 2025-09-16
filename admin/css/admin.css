@@ -1,0 +1,365 @@
+/* Elixir Order Manager Admin Styles */
+.wrap h1 {
+    color: #2271b1;
+    margin-bottom: 20px;
+}
+
+.eom-section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.eom-section h2 {
+    color: #3c434a;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.eom-product-form {
+    margin-bottom: 30px;
+}
+
+.eom-form-row {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.eom-form-row input[type="text"],
+.eom-form-row input[type="number"],
+.eom-form-row input[type="email"],
+.eom-form-row select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 150px;
+}
+
+.eom-form-row input[type="text"]:focus,
+.eom-form-row input[type="number"]:focus,
+.eom-form-row input[type="email"]:focus,
+.eom-form-row select:focus {
+    border-color: #2271b1;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(34, 113, 177, 0.2);
+}
+
+.eom-delete-form {
+    display: inline;
+}
+
+/* Order status badges */
+.eom-status {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.eom-status.pending {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.eom-status.processing {
+    background: #cce5ff;
+    color: #004085;
+    border: 1px solid #b8daff;
+}
+
+.eom-status.completed {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.eom-status.cancelled {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.eom-status.active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.eom-status.inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* New order highlight */
+.eom-new-order {
+    background-color: #fff8e5 !important;
+    font-weight: bold;
+}
+
+.eom-new-order td {
+    border-left: 3px solid #ffb900 !important;
+}
+
+/* Order details */
+.eom-order-details-content {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.eom-order-details-content h4 {
+    margin-top: 0;
+    color: #2271b1;
+    border-bottom: 2px solid #2271b1;
+    padding-bottom: 10px;
+}
+
+.eom-item-quantity {
+    width: 70px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.eom-update-quantity {
+    margin-left: 10px;
+}
+
+/* Dashboard widgets */
+.eom-dashboard-widget {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.eom-dashboard-widget h3 {
+    margin-top: 0;
+    color: #2271b1;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.eom-stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2271b1;
+    margin: 10px 0;
+}
+
+.eom-stat-label {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Quick action buttons */
+.eom-quick-actions {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.eom-quick-action-btn {
+    background: #2271b1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.eom-quick-action-btn:hover {
+    background: #135e96;
+    color: white;
+}
+
+/* Form styles */
+.eom-form-group {
+    margin-bottom: 15px;
+}
+
+.eom-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #3c434a;
+}
+
+.eom-form-group input[type="text"],
+.eom-form-group input[type="email"],
+.eom-form-group input[type="number"],
+.eom-form-group select,
+.eom-form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.eom-form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Table improvements */
+.wp-list-table th {
+    font-weight: 600;
+}
+
+.wp-list-table td {
+    vertical-align: middle;
+}
+
+.wp-list-table code {
+    background: #f6f7f7;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Responsive design */
+@media (max-width: 782px) {
+    .eom-form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .eom-form-row input[type="text"],
+    .eom-form-row input[type="number"],
+    .eom-form-row input[type="email"],
+    .eom-form-row select {
+        min-width: auto;
+    }
+    
+    .eom-order-details-content {
+        padding: 10px;
+    }
+    
+    .eom-item-quantity {
+        width: 60px;
+    }
+    
+    .eom-quick-actions {
+        flex-direction: column;
+    }
+    
+    .eom-quick-action-btn {
+        text-align: center;
+    }
+}
+
+/* Import/export styles */
+.eom-import-export {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px dashed #dee2e6;
+    margin: 20px 0;
+}
+
+.eom-import-export h3 {
+    margin-top: 0;
+    color: #495057;
+}
+
+.eom-file-format {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.eom-file-format h4 {
+    margin-top: 0;
+    color: #495057;
+}
+
+.eom-file-format ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.eom-file-format li {
+    margin-bottom: 5px;
+}
+
+/* Notification styles */
+.eom-notification {
+    padding: 15px;
+    border-radius: 4px;
+    margin: 15px 0;
+    border-left: 4px solid;
+}
+
+.eom-notification.success {
+    background: #d4edda;
+    color: #155724;
+    border-left-color: #28a745;
+}
+
+.eom-notification.error {
+    background: #f8d7da;
+    color: #721c24;
+    border-left-color: #dc3545;
+}
+
+.eom-notification.warning {
+    background: #fff3cd;
+    color: #856404;
+    border-left-color: #ffc107;
+}
+
+.eom-notification.info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border-left-color: #17a2b8;
+}
+
+/* Tab navigation */
+.eom-tabs {
+    display: flex;
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.eom-tab {
+    padding: 10px 20px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-bottom: none;
+    margin-right: 5px;
+    border-radius: 4px 4px 0 0;
+    text-decoration: none;
+    color: #495057;
+    cursor: pointer;
+}
+
+.eom-tab.active {
+    background: white;
+    border-bottom: 2px solid white;
+    margin-bottom: -2px;
+    color: #2271b1;
+    font-weight: 600;
+}
+
+.eom-tab-content {
+    display: none;
+}
+
+.eom-tab-content.active {
+    display: block;
+}

@@ -1,0 +1,79 @@
+/* Elixir Order Form Styles */
+.eom-order-form-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.eom-order-form-container h2 {
+    color: #2271b1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Filter Section */
+.eom-filters {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.eom-filters h3 {
+    color: #2271b1;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.eom-filter-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    align-items: end;
+}
+
+.eom-filter-form .eom-form-group {
+    margin-bottom: 0;
+}
+
+.eom-filter-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+}
+
+/* Form Styles */
+#eom-order-form {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+}
+
+.eom-customer-info,
+.eom-order-items {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#eom-order-form h3 {
+    color: #2271b1;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2271b1;
+}
+
+.eom-form-group {
+    margin-bottom: 20px;
+}
+
+.eom-form-group label {
+    display: block;
+   
